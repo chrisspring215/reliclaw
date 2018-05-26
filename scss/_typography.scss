@@ -1,0 +1,10 @@
+$font-header:  'Oswald', sans-serif;
+$font-content: 'Roboto', sans-serif;
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $font-header;
+}
+
+p {
+    font-family: $font-content;
+}

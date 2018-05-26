@@ -1,0 +1,25 @@
+
+.header {
+
+    .page-title {
+        color: $color-white;
+        text-align: center;
+    }
+
+    .page-title--title {
+    color: $color-white;
+    font-size: 5em;
+    font-family: $font-header;
+    font-weight: 300;
+    padding-bottom: .15em;
+    margin: .45em 0 .25em 0;;
+    text-transform: uppercase;
+    font-weight: 100;
+    border-bottom: .15em solid $color-yellow;
+    }
+
+    .page-title--sub-title {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,33 @@
+
+
+.global-navigation {
+
+}
+
+.global-navigation__link { 
+    text-decoration: none;
+    font-family: $font-header;
+}
+
+.header .global-navigation {
+    padding-top: 1em;
+    text-align: right;
+}
+
+.header .global-navigation__link {
+
+    display: inline-block;
+    color: #333;
+    text-transform: uppercase;
+    padding: .3em .5em;
+    margin-right: 1em;
+    background-color: none;
+    color: $color-white;
+    transition: $transition--all-out;
+
+    &:hover {
+        background-color: $color-grey;
+        color: $color-grey + 150;
+        transition: $transition--all-in;
+    }
+}

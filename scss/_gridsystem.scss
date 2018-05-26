@@ -1,0 +1,133 @@
+/* Base Padding for Rows */
+/* Set to "0" for no side margins */
+$baseRowPadding: 12%;
+
+/* Base percentage For All Columns */
+$baseColumnWidth: 8.3334%;
+
+/* Sets Base Column Padding */
+$baseColumnPadding: 12px;
+
+.row
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	        flex-wrap: wrap;
+
+	padding-left: $baseRowPadding - $baseRowPadding;
+	padding-right: $baseRowPadding - $baseRowPadding;
+}
+
+/* Centers a column in a row*/
+.row.centered-cols {	justify-content: center; }
+
+/* Sets XS Default Padding Between Columns */
+.col { padding: 0 $baseColumnPadding;}
+
+/* Removes padding in Nested Rows */
+.row .row {	padding-left: 0%; padding-right: 0%; }
+.row .col .row {margin-left: -$baseColumnPadding; margin-right: -$baseColumnPadding; }
+
+
+/* STANDARD WIDTHS */
+.col-quarter { width: 25%; }
+.col-third   { width: 33.3339%; }
+.col-half    { width: 50%; }
+.col-full    { width: 100%; }
+
+/* Screen Widths up to 480px; */
+.col-1-xs  { width: $baseColumnWidth * 1; }
+.col-2-xs  { width: $baseColumnWidth * 2; }
+.col-3-xs  { width: $baseColumnWidth * 3; }
+.col-4-xs  { width: $baseColumnWidth * 4; }
+.col-5-xs  { width: $baseColumnWidth * 5; }
+.col-6-xs  { width: $baseColumnWidth * 6; }
+.col-7-xs  { width: $baseColumnWidth * 7; }
+.col-8-xs  { width: $baseColumnWidth * 8; }
+.col-9-xs  { width: $baseColumnWidth * 9; }
+.col-10-xs { width: $baseColumnWidth * 10; }
+.col-11-xs { width: $baseColumnWidth * 11; }
+.col-12-xs { width: $baseColumnWidth * 12; }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+	/* Screen Widths Over 768px; */
+	.col-1-sm  { width: $baseColumnWidth * 1; }
+	.col-2-sm  { width: $baseColumnWidth * 2; }
+	.col-3-sm  { width: $baseColumnWidth * 3; }
+	.col-4-sm  { width: $baseColumnWidth * 4; }
+	.col-5-sm  { width: $baseColumnWidth * 5; }
+	.col-6-sm  { width: $baseColumnWidth * 6; }
+	.col-7-sm  { width: $baseColumnWidth * 7; }
+	.col-8-sm  { width: $baseColumnWidth * 8; }
+	.col-9-sm  { width: $baseColumnWidth * 9; }
+	.col-10-sm { width: $baseColumnWidth * 10; }
+	.col-11-sm { width: $baseColumnWidth * 11; }
+	.col-12-sm { width: $baseColumnWidth * 12; }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+	.row
+	{
+		/* Add a side padding on larger screens */
+		padding-left: $baseRowPadding;
+		padding-right: $baseRowPadding;
+	}
+
+	/* Screen Widths Over 992px; */
+	.col-1-md  { width: $baseColumnWidth * 1; }
+	.col-2-md  { width: $baseColumnWidth * 2; }
+	.col-3-md  { width: $baseColumnWidth * 3; }
+	.col-4-md  { width: $baseColumnWidth * 4; }
+	.col-5-md  { width: $baseColumnWidth * 5; }
+	.col-6-md  { width: $baseColumnWidth * 6; }
+	.col-7-md  { width: $baseColumnWidth * 7; }
+	.col-8-md  { width: $baseColumnWidth * 8; }
+	.col-9-md  { width: $baseColumnWidth * 9; }
+	.col-10-md { width: $baseColumnWidth * 10; }
+	.col-11-md { width: $baseColumnWidth * 11; }
+	.col-12-md { width: $baseColumnWidth * 12; }
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+	/* Screen Widths Over 1200px; */
+	.col-1-lg  { width: $baseColumnWidth * 1; }
+	.col-2-lg  { width: $baseColumnWidth * 2; }
+	.col-3-lg  { width: $baseColumnWidth * 3; }
+	.col-4-lg  { width: $baseColumnWidth * 4; }
+	.col-5-lg  { width: $baseColumnWidth * 5; }
+	.col-6-lg  { width: $baseColumnWidth * 6; }
+	.col-7-lg  { width: $baseColumnWidth * 7; }
+	.col-8-lg  { width: $baseColumnWidth * 8; }
+	.col-9-lg  { width: $baseColumnWidth * 9; }
+	.col-10-lg { width: $baseColumnWidth * 10; }
+	.col-11-lg { width: $baseColumnWidth * 11; }
+	.col-12-lg { width: $baseColumnWidth * 12; }
+
+	.container {
+		background: lightblue;
+		display: flex;
+		flex-direction: row;
+		
+		.item {	
+
+			flex-grow: 3
+		}
+
+		.centered {
+			flex-grow: 1;
+			background: red;
+		}
+	}
+}
