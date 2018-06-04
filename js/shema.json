@@ -1,0 +1,29 @@
+{
+    "@context":"http://schema.org",
+    "@type":"Attorney",
+    "name":"Rellic Law PLLC",
+    "image":"",
+    "@id":"",
+    "url":"",
+    "telephone":"(734) 277-7893",
+    "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"1449 Woodward Ave.",
+        "addressLocality":"Detroit",
+        "addressRegion":"MI",
+        "postalCode":"48226",
+        "addressCountry":"US"
+    },
+    "geo":{
+        "@type":"GeoCoordinates",
+        "latitude":42.334671,
+        "longitude":-83.04951899999998
+    },
+    "sameAs":[
+        "",
+        "",
+        "",
+        "",
+        ""
+    ]
+}

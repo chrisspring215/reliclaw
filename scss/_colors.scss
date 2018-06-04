@@ -1,3 +1,7 @@
+$opacity-full: 1;
+$opacity-transparent: .75;
+
 $color-yellow: #FDD835;
-$color-grey: rgba(61,61,61,1);
+$color-grey-full: rgba(61,61,61,$opacity-full);
+$color-grey-transparent: rgba(61,61,61,$opacity-transparent);
 $color-white: #fff;

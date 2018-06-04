@@ -4,22 +4,54 @@
     .page-title {
         color: $color-white;
         text-align: center;
+        
     }
 
-    .page-title--title {
+    .page-title__title {
     color: $color-white;
-    font-size: 5em;
+    font-size: 3em;
     font-family: $font-header;
     font-weight: 300;
     padding-bottom: .15em;
-    margin: .45em 0 .25em 0;;
+    margin: 1.5em 0 .25em 0;
     text-transform: uppercase;
     font-weight: 100;
     border-bottom: .15em solid $color-yellow;
+    
     }
 
-    .page-title--sub-title {
-        font-size: 1.5em;
+    .page-title__sub-title {
+        font-size: 1em;
         font-weight: 400;
     }
+}
+
+@media only screen and (min-width: 48em) {
+    .header {
+
+        .page-title {
+            color: $color-white;
+            text-align: center;
+            
+        }
+    
+        .page-title__title {
+        color: $color-white;
+        font-size: 4.5em;
+        font-family: $font-header;
+        font-weight: 300;
+        padding-bottom: .15em;
+        margin: 1.25em 0 .25em 0;
+        text-transform: uppercase;
+        font-weight: 100;
+        border-bottom: .15em solid $color-yellow;
+        
+        }
+    
+        .page-title__sub-title {
+            font-size: 1.5em;
+            font-weight: 400;
+        }
+    }
+
 }
